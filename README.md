@@ -132,8 +132,58 @@
   <canvas id="confettiCanvas"></canvas>
 
   <main class="card">
-    <!-- ANIMAL WITH HEART -->
-    <<svg class="art" viewBox="0 0 420 360" xmlns="http://www.w3.org/2000/svg">   <defs>     <radialGradient id="furReal" cx="50%" cy="35%" r="70%">       <stop offset="0%" stop-color="#f7f7f8"/>       <stop offset="100%" stop-color="#e1e3e8"/>     </radialGradient>      <linearGradient id="heartSoft" x1="0" x2="1">       <stop offset="0" stop-color="#ff6b9a"/>       <stop offset="1" stop-color="#ff3b7a"/>     </linearGradient>   </defs>    <!-- Subtle heart -->   <path d="M210 42            C210 28 230 26 238 38            C246 26 266 28 266 42            C266 62 238 76 238 92            C238 76 210 62 210 42Z"         fill="url(#heartSoft)"         opacity="0.85"/>    <!-- Tail (behind body) -->   <path d="M310 250            C360 270 370 315 330 330            C300 342 270 320 290 300            C310 280 290 260 270 255Z"         fill="#d7d9de"/>    <!-- Body -->   <ellipse cx="210" cy="270" rx="120" ry="70" fill="url(#furReal)"/>    <!-- Rosettes on body -->   <g fill="none" stroke="#9aa0a6" stroke-width="2" opacity="0.75">     <ellipse cx="170" cy="265" rx="12" ry="8"/>     <ellipse cx="205" cy="290" rx="13" ry="9"/>     <ellipse cx="245" cy="265" rx="12" ry="8"/>   </g>    <!-- Ears -->   <ellipse cx="155" cy="125" rx="22" ry="26" fill="#d7d9de"/>   <ellipse cx="265" cy="125" rx="22" ry="26" fill="#d7d9de"/>    <!-- Head -->   <ellipse cx="210" cy="190" rx="95" ry="85" fill="url(#furReal)"/>    <!-- Rosettes on head -->   <g fill="none" stroke="#9aa0a6" stroke-width="2" opacity="0.75">     <ellipse cx="170" cy="185" rx="10" ry="7"/>     <ellipse cx="195" cy="215" rx="11" ry="8"/>     <ellipse cx="235" cy="190" rx="10" ry="7"/>   </g>    <!-- Eyes (blink animation) -->   <g>     <ellipse id="eyeL" cx="185" cy="185" rx="7" ry="9" fill="#111827">       <animate attributeName="ry"                values="9;9;9;1;9"                keyTimes="0;0.7;0.78;0.82;1"                dur="6s"                repeatCount="indefinite" />     </ellipse>      <ellipse id="eyeR" cx="235" cy="185" rx="7" ry="9" fill="#111827">       <animate attributeName="ry"                values="9;9;9;1;9"                keyTimes="0;0.7;0.78;0.82;1"                dur="6s"                repeatCount="indefinite" />     </ellipse>   </g>    <!-- Nose -->   <path d="M210 205            C202 205 198 210 198 215            C198 222 210 225 210 231            C210 225 222 222 222 215            C222 210 218 205 210 205Z"         fill="#d97786"/>    <!-- Mouth -->   <path d="M195 233 Q210 242 225 233"         stroke="#6b7280"         stroke-width="2.5"         fill="none"/>    <!-- Whiskers -->   <g stroke="#9ca3af" stroke-width="1.2">     <line x1="165" y1="215" x2="130" y2="205"/>     <line x1="165" y1="222" x2="130" y2="222"/>     <line x1="255" y1="215" x2="290" y2="205"/>     <line x1="255" y1="222" x2="290" y2="222"/>   </g>
+    <svg class="art" viewBox="0 0 420 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="furReal" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#f7f7f8"/>
+      <stop offset="100%" stop-color="#e1e3e8"/>
+    </radialGradient>
+
+    <linearGradient id="heartSoft" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff6b9a"/>
+      <stop offset="1" stop-color="#ff3b7a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Subtle heart -->
+  <path d="M210 42
+           C210 28 230 26 238 38
+           C246 26 266 28 266 42
+           C266 62 238 76 238 92
+           C238 76 210 62 210 42Z"
+        fill="url(#heartSoft)"
+        opacity="0.85"/>
+
+  <!-- Tail -->
+  <path d="M310 250
+           C360 270 370 315 330 330
+           C300 342 270 320 290 300
+           C310 280 290 260 270 255Z"
+        fill="#d7d9de"/>
+
+  <!-- Body -->
+  <ellipse cx="210" cy="270" rx="120" ry="70" fill="url(#furReal)"/>
+
+  <!-- Body rosettes -->
+  <g fill="none" stroke="#9aa0a6" stroke-width="2" opacity="0.75">
+    <ellipse cx="170" cy="265" rx="12" ry="8"/>
+    <ellipse cx="205" cy="290" rx="13" ry="9"/>
+    <ellipse cx="245" cy="265" rx="12" ry="8"/>
+  </g>
+
+  <!-- Ears -->
+  <ellipse cx="155" cy="125" rx="22" ry="26" fill="#d7d9de"/>
+  <ellipse cx="265" cy="125" rx="22" ry="26" fill="#d7d9de"/>
+
+  <!-- Head -->
+  <ellipse cx="210" cy="190" rx="95" ry="85" fill="url(#furReal)"/>
+
+  <!-- Head rosettes -->
+  <g fill="none" stroke="#9aa0a6" stroke-width="2" opacity="0.75">
+    <ellipse cx="170" cy="185" rx="10" ry="7"/>
+    <ellipse cx="195" cy="215" rx="11" ry="8"/>
+    <ellipse cx="235" cy="190"
+
       <defs>
         <linearGradient id="fur" x1="0" x2="1">
           <stop offset="0" stop-color="#f7c7a1"/>
