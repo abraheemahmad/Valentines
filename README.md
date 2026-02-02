@@ -1,8 +1,10 @@
+Website 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Rameen Will you be my Valentine?</title>
+  <title>Rameen, Will you be my Valentine?</title>
 
   <!-- Confetti library -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
@@ -132,58 +134,8 @@
   <canvas id="confettiCanvas"></canvas>
 
   <main class="card">
-    <svg class="art" viewBox="0 0 420 360" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <radialGradient id="furReal" cx="50%" cy="35%" r="70%">
-      <stop offset="0%" stop-color="#f7f7f8"/>
-      <stop offset="100%" stop-color="#e1e3e8"/>
-    </radialGradient>
-
-    <linearGradient id="heartSoft" x1="0" x2="1">
-      <stop offset="0" stop-color="#ff6b9a"/>
-      <stop offset="1" stop-color="#ff3b7a"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Subtle heart -->
-  <path d="M210 42
-           C210 28 230 26 238 38
-           C246 26 266 28 266 42
-           C266 62 238 76 238 92
-           C238 76 210 62 210 42Z"
-        fill="url(#heartSoft)"
-        opacity="0.85"/>
-
-  <!-- Tail -->
-  <path d="M310 250
-           C360 270 370 315 330 330
-           C300 342 270 320 290 300
-           C310 280 290 260 270 255Z"
-        fill="#d7d9de"/>
-
-  <!-- Body -->
-  <ellipse cx="210" cy="270" rx="120" ry="70" fill="url(#furReal)"/>
-
-  <!-- Body rosettes -->
-  <g fill="none" stroke="#9aa0a6" stroke-width="2" opacity="0.75">
-    <ellipse cx="170" cy="265" rx="12" ry="8"/>
-    <ellipse cx="205" cy="290" rx="13" ry="9"/>
-    <ellipse cx="245" cy="265" rx="12" ry="8"/>
-  </g>
-
-  <!-- Ears -->
-  <ellipse cx="155" cy="125" rx="22" ry="26" fill="#d7d9de"/>
-  <ellipse cx="265" cy="125" rx="22" ry="26" fill="#d7d9de"/>
-
-  <!-- Head -->
-  <ellipse cx="210" cy="190" rx="95" ry="85" fill="url(#furReal)"/>
-
-  <!-- Head rosettes -->
-  <g fill="none" stroke="#9aa0a6" stroke-width="2" opacity="0.75">
-    <ellipse cx="170" cy="185" rx="10" ry="7"/>
-    <ellipse cx="195" cy="215" rx="11" ry="8"/>
-    <ellipse cx="235" cy="190"
-
+    <!-- ANIMAL WITH HEART -->
+    <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="fur" x1="0" x2="1">
           <stop offset="0" stop-color="#f7c7a1"/>
@@ -220,7 +172,7 @@
             fill="#ff7aa2"/>
     </svg>
 
-    <h1>Rameen, will you be my valentine?</h1>
+    <h1>Ramen, will you be my valentine?</h1>
 
     <section class="button-zone" id="zone">
       <button id="yesBtn">Yes</button>
@@ -234,7 +186,7 @@
       <h2>YAY! 🎉</h2>
       <img
         class="fireworks"
-        src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
+        src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
         alt="Fireworks"
       />
     </section>
@@ -349,5 +301,3 @@
   </script>
 </body>
 </html>
-
-
